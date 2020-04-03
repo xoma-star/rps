@@ -1,0 +1,87 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.clear-fix{
+  clear: both;
+}
+.left{
+  float: left;
+}
+.right{
+  float: right;
+}
+.text-middle{
+  text-align: center;
+}
+.text-left{
+  text-align: left;
+}
+.text-right{
+  text-align: right;
+}
+.battle_avas img{
+  display: inline-block;
+}
+.no-flex .Header__in{
+  display: block;
+}
+@keyframes left_hand {
+  from {transform: scaleX(-1) rotate(270deg)}
+  33% {transform: scaleX(-1) rotate(315deg)}
+  66% {transform: scaleX(-1) rotate(226deg)}
+  to {transform: scaleX(-1) rotate(270deg)}
+}
+@keyframes right_hand {
+  /*from {transform: rotate(225deg)}*/
+  /*50% {transform: rotate(315deg)}*/
+  /*to {transform: rotate(225deg)}*/
+  from {transform: rotate(270deg)}
+  33% {transform: rotate(315deg)}
+  66% {transform: rotate(226deg)}
+  to {transform: rotate(270deg)}
+}
+.test{
+  transition: .2s;
+}
+.test.hidden{
+  transform: scaleX(0);
+}
+.test2.hidden{
+  transform: scaleX(0);
+}
+.test2{
+  position: relative;
+  font-size: 5em;
+  top: -100px;
+  margin-bottom: -80px;
+}
+.left_hand.animated{
+  animation: left_hand .6s linear;
+  animation-iteration-count: 2.75;
+}
+.right_hand.animated{
+  animation: right_hand .6s linear;
+  animation-iteration-count: 2.75;
+}
+.left_hand{
+  transform: scaleX(-1) rotate(270deg);
+  margin: 0 !important;
+}
+.right_hand{
+  transform: rotate(270deg);
+  margin: 0 !important;
+}
+.selectHand{
+  transform: rotate(270deg);
+}
